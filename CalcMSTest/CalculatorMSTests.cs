@@ -7,7 +7,7 @@ namespace CalcMSTest
     public class CalculatorMSTests
     {
         [TestMethod]
-        public void AddNumbers_InputTwoIntegers_GetCorrectResult()
+        public void AddNumbers_InputTwoIntegers_GetAddedIntegers()
         {
             //Arrange phase
             Calculator calculator = new Calculator();

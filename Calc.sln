@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", "{68BFA7F3-8FF9-4696-8999-4272DD878B2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Calc\Test.csproj", "{68BFA7F3-8FF9-4696-8999-4272DD878B2F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcMSTest", "CalcMSTest\CalcMSTest.csproj", "{077B4DD2-7462-4A6C-96AF-59272760801A}"
 EndProject
