@@ -13,7 +13,7 @@ namespace Calc
         }
 
         [Test]
-        public void CombineName_InputFirstAndLastName_ReturnFullName()
+        public void CombineName_InputFirstAndLastName_ReturnsFullName()
         {
             person.GreetAndCombineNames("Nikos", "Sal");
 
@@ -25,10 +25,17 @@ namespace Calc
         }
 
         [Test]
-        public void GreetMessage_ReturnNull()
+        public void GreetMessage_ReturnsNull()
         {
             // person.GreetAndCombineNames("Nikos", "Sal");
             Assert.IsNull(person.Message);
+        }
+
+        [Test]
+        public void DiscountCheck_Person_ReturnsDiscountInRage()
+        {
+            int result = person.Discount;
+            Assert.That(result, Is.InRange(10, 25));
         }
 
 
