@@ -17,11 +17,16 @@ namespace Calc
         {
             person.GreetAndCombineNames("Nikos", "Sal");
 
-            Assert.That(person.Message, Is.EqualTo("Hello Nikos Sal"));
-            Assert.That(person.Message, Does.Contain("Hello").IgnoreCase);
-            Assert.That(person.Message, Does.StartWith("H"));
-            Assert.That(person.Message, Does.EndWith("Sal"));
-            Assert.That(person.Message, Does.Match("Hello [A-Z]{1}[a-z]+"));
+            //If one test fails, all tests will fail
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(person.Message, "Hello Nikos Sal");
+                Assert.That(person.Message, Is.EqualTo("1Hello Nikos Sal"));
+                Assert.That(person.Message, Does.Contain("1Hello").IgnoreCase);
+                Assert.That(person.Message, Does.StartWith("H"));
+                Assert.That(person.Message, Does.EndWith("Sal"));
+                Assert.That(person.Message, Does.Match("Hello [A-Z]{1}[a-z]+"));
+            });
         }
 
         [Test]
